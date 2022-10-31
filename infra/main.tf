@@ -1,7 +1,9 @@
 provider "aws" {
-    region = "us-east-1"
-    access_key = "${var.access_key}"
-    secret_key = "${var.secret_key}"
+    region = "eu-west-1"
+    shared_credentials_files = ["/home/anil/.aws/credentials"]
+#    profile                 = "profile_name"
+#    access_key = ""
+#    secret_key = ""
 }
 
 data "aws_availability_zones" "azs" {
