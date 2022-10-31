@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+
+    api:
+      image: ra/api
+      build: ./api
+      ports:
+        - 5000:5000
+      restart: always
+
+    sys-stats:
+      image: ra/api
+      build: ./sys-stats
+      ports:
+        - 80:80
+      restart: always
