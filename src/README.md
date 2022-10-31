@@ -14,3 +14,6 @@ In the sys-stats directory, do the following. (node 16)
 - npm install
 - npm start
 - Visit http://127.0.0.1:3000
+
+#### Quick Start
+``` sudo docker-compose up --build -d ```

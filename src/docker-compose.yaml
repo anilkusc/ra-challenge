@@ -9,7 +9,7 @@ services:
       restart: always
 
     sys-stats:
-      image: ra/api
+      image: ra/sts-stats
       build: ./sys-stats
       ports:
         - 80:80
