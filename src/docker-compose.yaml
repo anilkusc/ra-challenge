@@ -2,14 +2,14 @@ version: '3.3'
 services:
 
     api:
-      image: ra/api
+      image: anilkuscu95/ra-api
       build: ./api
       ports:
         - 5000:5000
       restart: always
 
     sys-stats:
-      image: ra/sts-stats
+      image: anilkuscu95/ra-sts-stats
       build: ./sys-stats
       ports:
         - 80:80
