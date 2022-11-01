@@ -18,11 +18,3 @@ spec:
                 name: frontend   
                 port:   
                   number: 80
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: tcp-services
-  namespace: ingress-nginx
-data:
-    5000: "default/api:5000"
